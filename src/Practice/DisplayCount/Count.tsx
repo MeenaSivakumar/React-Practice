@@ -5,7 +5,7 @@ export const Count = ({}) =>{
 
     const[count,setCount] = useState(0);
     const handleSubmit = ()=>{
-       setCount(count+2);
+       setCount(count+1);
     }
     return(
         <>

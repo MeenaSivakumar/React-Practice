@@ -15,6 +15,14 @@ import { ResetButton } from './Practice/ResetButton/ResetButton';
 import { Button } from './Practice/ReusableBuuton/Buuton';
 import { ToggleButton } from './Practice/ToggleButton';
 import { UpdateUserObject } from './Practice/UpdateObject/UpdateUserObject';
+import { ApiFetch } from './Practice/UseEffect/ApiFetch';
+import { CleanUp } from './Practice/UseEffect/CleanUp';
+import { CopMount } from './Practice/UseEffect/ComMount';
+import { CountUpdate } from './Practice/UseEffect/CountUpdate';
+import { EffectOnSpecific } from './Practice/UseEffect/EffectOnSpecificConditon';
+import { EffectWithInput } from './Practice/UseEffect/EffectWithInput';
+import { MultipleUseEffect } from './Practice/UseEffect/MultipleUseEffects';
+import { UpdateTitle } from './Practice/UseEffect/UpdateTitle';
 
 function App() {
   const func = ()=>{
@@ -23,7 +31,7 @@ function App() {
   return (
     <div >
      {/* <DisplayString message="hello react......"/> */}
-     <Count/>
+     {/* <Count/> */}
      {/* <IterateItems/> */}
      {/* <DefaultProp isLoggedIn = {false} /> */}
      {/* <Button color='red' label='click' onClick={()=>console.log("you are a good person")}/> */}
@@ -38,6 +46,14 @@ function App() {
      {/* <UpdateUserObject/> */}
      {/* <ConditionalRendoring shown={false}/> */}
      {/* <DisableButton/> */}
+     {/* <CopMount/> */}
+     {/* <CountUpdate/> */}
+     {/* <CleanUp/> */}
+     {/* <EffectWithInput/> */}
+     {/* <UpdateTitle/> */}
+     {/* <MultipleUseEffect/> */}
+     {/* <ApiFetch/> */}
+     <EffectOnSpecific/>
     </div>
   );
 }
