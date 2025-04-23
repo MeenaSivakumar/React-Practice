@@ -12,7 +12,7 @@ export const ToggleButton = ({}) => {
       <button type="submit" onClick={(e) => handleClick(e)}>
         {isOn ? "on" : "off"}
       </button>
-      {isOn?<ComponentUnMount isOnOrOff={isOn} />:null}
+      {isOn?<ComponentUnMount />:null}
       
     </>
   );

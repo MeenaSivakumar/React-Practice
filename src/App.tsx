@@ -22,6 +22,7 @@ import { CountUpdate } from './Practice/UseEffect/CountUpdate';
 import { EffectOnSpecific } from './Practice/UseEffect/EffectOnSpecificConditon';
 import { EffectWithInput } from './Practice/UseEffect/EffectWithInput';
 import { MultipleUseEffect } from './Practice/UseEffect/MultipleUseEffects';
+import { UpdateObjectUseEffect } from './Practice/UseEffect/UpdateObjectUseEffect';
 import { UpdateTitle } from './Practice/UseEffect/UpdateTitle';
 
 function App() {
@@ -53,7 +54,8 @@ function App() {
      {/* <UpdateTitle/> */}
      {/* <MultipleUseEffect/> */}
      {/* <ApiFetch/> */}
-     <EffectOnSpecific/>
+     {/* <EffectOnSpecific/> */}
+     <UpdateObjectUseEffect/>
     </div>
   );
 }
