@@ -1,11 +1,9 @@
-import { useDispatch, useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom";
+import { useSelector } from "react-redux";
+
 import { RootState } from "../store";
-import { signUpSlice } from "./SignUpSlice";
 
 export const Summary = ({}) => {
   const summary = useSelector((state: RootState) => state.signUp);
- 
 
   return (
     <div>

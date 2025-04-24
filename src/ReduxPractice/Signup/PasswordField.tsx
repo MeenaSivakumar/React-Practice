@@ -7,7 +7,7 @@ export const PasswordField = ({}) => {
   const navigate = useNavigate();
   const password = useSelector((state: RootState) => state.signUp.password);
   const dispatch = useDispatch();
-  const handleSubmit = (event) => {
+  const handleSubmit = (event: { preventDefault: () => void; }) => {
     event.preventDefault();
     console.log(signUpSlice.getSelectors());
     navigate("/summary");
@@ -22,7 +22,6 @@ export const PasswordField = ({}) => {
         />
         <input type="submit" />
       </form>
-      <span>{password}</span>
     </div>
   );
 };

@@ -7,7 +7,7 @@ export const FirstName = ({}) => {
   const navigate = useNavigate();
   const firstName = useSelector((state: RootState) => state.signUp.firstName);
   const dispatch = useDispatch();
-  const handleSubmit = (event) => {
+  const handleSubmit = (event: { preventDefault: () => void; }) => {
     event.preventDefault();
     navigate("/phoneNumber");
   };
@@ -21,7 +21,6 @@ export const FirstName = ({}) => {
         />
         <input type="submit" />
       </form>
-      <span>{firstName}</span>
     </div>
   );
 };

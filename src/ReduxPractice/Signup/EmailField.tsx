@@ -7,7 +7,7 @@ export const EmailField = ({}) => {
   const navigate = useNavigate();
   const email = useSelector((state: RootState) => state.signUp.email);
   const dispatch = useDispatch();
-  const handleSubmit = (event) => {
+  const handleSubmit = (event: { preventDefault: () => void; }) => {
     event.preventDefault();
     navigate("/firstName");
   };
@@ -22,7 +22,6 @@ export const EmailField = ({}) => {
           />
         </div>
       </form>
-      <h1>{email}</h1>
     </div>
   );
 };

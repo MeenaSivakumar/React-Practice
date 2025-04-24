@@ -9,7 +9,7 @@ export const PhoneNumber = ({}) => {
     (state: RootState) => state.signUp.phoneNummber
   );
   const dispatch = useDispatch();
-  const handleSubmit = (event) => {
+  const handleSubmit = (event: { preventDefault: () => void; }) => {
     event.preventDefault();
     navigate("/password");
   };
@@ -23,7 +23,6 @@ export const PhoneNumber = ({}) => {
         />
         <input type="submit" />
       </form>
-      <span>{phoneNumber}</span>
     </div>
   );
 };
