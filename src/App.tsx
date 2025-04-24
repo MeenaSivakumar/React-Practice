@@ -4,6 +4,8 @@ import { UpdateObjectUseEffect } from "./Practice/UseEffect/UpdateObjectUseEffec
 import { EmailField } from "./JotaiPractice/EmailField";
 import { PasswordField } from "./JotaiPractice/PasswordField";
 import { Summary } from "./JotaiPractice/Summary";
+import { Counter } from "./JotaiPractice/Counter";
+import { DisplayCount } from "./JotaiPractice/Displayatom";
 
 function App() {
   const func = () => {
@@ -15,6 +17,8 @@ function App() {
       <Route path="/" element={<EmailField/>}/>
       <Route path="/password" element={<PasswordField/>}/>
       <Route path="/summary" element={<Summary/>}/>
+      <Route path="/counter" element={<Counter/>}/>
+      <Route path="/displayCount" element={<DisplayCount/>}/>
     </Routes>
  
     // <div >
