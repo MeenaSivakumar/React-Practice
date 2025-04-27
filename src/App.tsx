@@ -1,15 +1,19 @@
-import { Route, Router, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import { UpdateObjectUseEffect } from "./Practice/UseEffect/UpdateObjectUseEffect";
+import { Counter } from "./Practice/Counter/Counter";
+import { DisplayCounter } from "./Practice/Counter/DisplayCounter";
+import { FruitsListPage } from "./Pages/FruitList/FruitsListPage";
+
+
 
 function App() {
-  const func = () => {
-    console.log("button clicked");
-  };
-  return (
-   
-    
  
+  return (
+  //  <Routes>
+  //   <Route path="/" element={<Counter value={0}/>}/>
+  //   <Route path="/display" element={<DisplayCounter/>}/>
+  //   </Routes>
+
     <div >
      {/* <DisplayString message="hello react......"/> */}
      {/* <Count/> */}
@@ -35,8 +39,9 @@ function App() {
      {/* <MultipleUseEffect/> */}
      {/* <ApiFetch/> */}
      {/* <EffectOnSpecific/> */}
-     <UpdateObjectUseEffect/>
+     {/* <UpdateObjectUseEffect/> */}
      {/* <LoginForm/> */}
+     <FruitsListPage/>
     </div>
   );
 }

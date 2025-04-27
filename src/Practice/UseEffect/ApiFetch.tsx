@@ -7,12 +7,12 @@ export const ApiFetch = ({}) =>{
     },[])
     return(
         <>
-        <p>Today joke</p>
+        {/* <p>Today joke</p>
         {jokeData && (<div>
             <p>Joke Type:{jokeData.type}</p>
             <p>setup:{jokeData.setup}</p>
             <p>punchline:{jokeData.punchline}</p>
-            </div>)}
+            </div>)} */}
         </>
     );
 }
