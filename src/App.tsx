@@ -3,6 +3,8 @@ import "./App.css";
 import { Counter } from "./Practice/Counter/Counter";
 import { DisplayCounter } from "./Practice/Counter/DisplayCounter";
 import { FruitsListPage } from "./Pages/FruitList/FruitsListPage";
+import { InputForm } from "./Practice/FormHandling/InputForm";
+import { DisplayEmployee } from "./Practice/FormHandling/DisplayEmployee";
 
 
 
@@ -41,7 +43,10 @@ function App() {
      {/* <EffectOnSpecific/> */}
      {/* <UpdateObjectUseEffect/> */}
      {/* <LoginForm/> */}
-     <FruitsListPage/>
+     {/* <FruitsListPage/> */}
+     <InputForm/>
+     {/* <DisplayEmployeeList/> */}
+     {/* <DisplayEmployee/> */}
     </div>
   );
 }
