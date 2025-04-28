@@ -1,3 +1,3 @@
-export interface SubmitFormProps{
-    onSubmit:()=>void;
+export interface SubmitFormProps {
+  onSubmit: () => void;
 }

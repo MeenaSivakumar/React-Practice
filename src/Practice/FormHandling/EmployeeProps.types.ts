@@ -1,5 +1,5 @@
-export interface EmployeeProps{
-    name:string;
-    role:string;
-    dep:string;
+export interface EmployeeProps {
+  name: string;
+  role: string;
+  dep: string;
 }

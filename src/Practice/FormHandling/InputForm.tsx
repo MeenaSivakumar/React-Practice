@@ -19,17 +19,19 @@ export const InputForm = ({}) => {
     if (ref.current) {
       ref.current.focus();
     }
-    setTimeout(()=>{ref.current?.blur()},3000)
+    setTimeout(() => {
+      ref.current?.blur();
+    }, 3000);
   }, []);
-//   useImperativeHandle(ref, () => {
-//     return {
-//       focus() {
-//         if(ref.current)
-//         ref.current?.focus();
-//       },
-      
-//     };
-//   }, []);
+  //   useImperativeHandle(ref, () => {
+  //     return {
+  //       focus() {
+  //         if(ref.current)
+  //         ref.current?.focus();
+  //       },
+
+  //     };
+  //   }, []);
   return (
     <div>
       <form>
@@ -42,9 +44,9 @@ export const InputForm = ({}) => {
           ref={ref}
         />
       </form>
-      <SubmitForm onSubmit={handleSubmit}  />
+      <SubmitForm onSubmit={handleSubmit} />
       <ResetForm onReset={handleReset} />
-      {/* <ChildInput ref={ref}/> */}
+      <ChildInput ref={ref} />
     </div>
   );
 };
