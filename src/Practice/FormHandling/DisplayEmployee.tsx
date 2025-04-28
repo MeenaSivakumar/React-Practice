@@ -4,9 +4,9 @@ import { EmployeeProps } from "./EmployeeProps.types";
 export const DisplayEmployee = () => {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const empList = [
-    { name: "john", role: "Frontend Developer", dep:"Research" },
-    { name: "harry", role: "BackeEnd Developer",dep:"sales"  },
-    { name: "mary", role: "Frontend Developer", dep:"marketing"},
+    { name: "john", role: "Frontend Developer", dep: "Research" },
+    { name: "harry", role: "BackeEnd Developer", dep: "sales" },
+    { name: "mary", role: "Frontend Developer", dep: "marketing" },
   ];
   const [input, setInput] = useState("");
   const [employeesList, setEmployeesList] = useState<EmployeeProps[]>([]);
@@ -26,7 +26,7 @@ export const DisplayEmployee = () => {
         empList.filter((value) => value.dep.toLowerCase().includes(input))
       );
     },
-    [input,empList]
+    [input, empList]
   );
 
   return (
