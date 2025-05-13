@@ -44,8 +44,7 @@ function App() {
      {/* <UpdateObjectUseEffect/> */}
      {/* <LoginForm/> */}
      {/* <FruitsListPage/> */}
-     <InputForm/>
-     {/* <DisplayEmployeeList/> */}
+     {/* <InputForm/> */}
      {/* <DisplayEmployee/> */}
     </div>
   );
