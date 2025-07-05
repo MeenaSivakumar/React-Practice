@@ -15,11 +15,14 @@ const UserList = () => {
     setShowUsers(true);
     await refetch(); 
   };
+  const handleClose = ()=>{
+    setShowUsers(false);
+  }
 
   return (
     <div>
       <button onClick={handleClick}>Show Users</button>
-
+      <button onClick={handleClose}>close</button>
       {isLoading && <p>Loading...</p>}
       {isError && <p>Error: {(error as Error).message}</p>}
 
