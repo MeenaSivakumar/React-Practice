@@ -5,6 +5,7 @@ import { DisplayCounter } from "./Practice/Counter/DisplayCounter";
 import { FruitsListPage } from "./Pages/FruitList/FruitsListPage";
 import { InputForm } from "./Practice/FormHandling/InputForm";
 import { DisplayEmployee } from "./Practice/FormHandling/DisplayEmployee";
+import Form from "./Practice/FormUpdate/Form";
 
 
 
@@ -17,6 +18,7 @@ function App() {
   //   </Routes>
 
     <div >
+      <Form/>
      {/* <DisplayString message="hello react......"/> */}
      {/* <Count/> */}
      {/* <IterateItems/> */}

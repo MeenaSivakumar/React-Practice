@@ -1,28 +1,69 @@
-import { useState } from "react"
+import { ChangeEvent, useState } from "react"
 import { FormProps } from "react-router-dom";
+interface User {
+    age: string;
+    email: string;
+    name: string;
+}
+const Form = ({ }) => {
 
-const Form = ({})=>{
+    const [formData, setFormData] = useState<User>({
+        age: '',
+        name: '',
+        email: '',
+    })
+    const [isSubmitted, setSubmitted] = useState(false);
 
-    const[name,setName] = useState('');
-    const[age,setAge] = useState(0);
-    const[email,setEmail] = useState('');
-    const[userData,setUserData] = useState<FormProps>();
-   
-    const handleSubmit = ()=>{
-        
-         setUserData(
-            {}
-         )
+    const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+        const { name, value } = e.target;
+        setFormData(prev => ({ ...prev, [name]: value }));
+    };
+
+
+    const handleSubmit = (e: React.FormEvent) => {
+        e.preventDefault();
+        console.log("form submitted", formData)
+        setSubmitted(true);
     }
-  
-    return(
+
+    return (
         <>
-        <form>
-              <input type='text' placeholder="Enter your name" value={name} onChange={(e)=>{setName(e.target.value)}} />
-                <input type='email' placeholder="Enter your email" value={email} onChange={(e)=>{setEmail(e.target.value)}} />
-            <input type='number' placeholder="Enter your Age" value={age} onChange={(e)=>{setAge(e.target.valueAsNumber)}} />
-            <button onClick={()=>handleSubmit}>Submit</button>
-        </form>
+            <form onSubmit={handleSubmit}>
+                <input
+                    type="text"
+                    name="name"
+                    placeholder="Enter your name"
+                    value={formData.name}
+                    onChange={handleChange}
+                />
+
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    value={formData.email}
+                    onChange={handleChange}
+                />
+
+                <input
+                    type="number"
+                    name="age"
+                    placeholder="Enter your age"
+                    value={formData.age}
+                    onChange={handleChange}
+                />
+
+                <button type='submit'>Submit</button>
+            </form>
+            {isSubmitted && <div>
+                <p>user info</p>
+                <p>user name:{formData.name}</p>
+                <p>user email: {formData.email}</p>
+                <p>user age: {formData.age}</p>
+            </div>}
+
         </>
     )
 }
+
+export default Form;

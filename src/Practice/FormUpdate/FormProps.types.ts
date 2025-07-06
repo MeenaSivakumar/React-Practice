@@ -1,9 +1,5 @@
 export interface  FormProps{
-    
-   user:{ 
-    age:number; 
+    age:string; 
     email:string;
     name:string; 
-   }
-   
 }
