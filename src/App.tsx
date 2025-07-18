@@ -7,13 +7,19 @@ import { InputForm } from "./Practice/FormHandling/InputForm";
 import { DisplayEmployee } from "./Practice/FormHandling/DisplayEmployee";
 import Form from "./Practice/FormUpdate/Form";
 import { DynamicList } from "./stateUpdate/dynamic_list_update/DynamicList";
+import { UserObj } from "./stateUpdate/stateObj/UserObj";
+import { NestedObject } from "./stateUpdate/nestedobject/NestedObject";
 
 
 
 function App() {
  
   return (
+    <>
   <DynamicList/>
+  <UserObj/>
+  <NestedObject/>
+  </>
   );
 }
 
